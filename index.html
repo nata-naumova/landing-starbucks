@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">StarBucks</a>
+        <button class="menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Select</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container header__box">
+        <div class="header__content">
+          <h1 class="base__title glow">
+            New Cafe by&nbsp;<span class="text-grad">StarBucks</span>
+          </h1>
+          <p class="base__subtitle">
+            Have time to buy the most harmonious drinks in the
+            new&nbsp;Starbucks coffee and don't forget about the discount!
+          </p>
+          <div class="header__buttons">
+            <button class="button button-primary">Select a coffee</button>
+            <button class="button button-secondary">More</button>
+          </div>
+          <ul class="header__stats stats">
+            <li class="stats__item">
+              <span class="stats__count">9k</span>
+              <span class="stats__text">Premium users</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__count">2k</span>
+              <span class="stats__text">Happy customer</span>
+            </li>
+            <li class="stats__item">
+              <span class="stats__count">28</span>
+              <span class="stats__text">Awards winning</span>
+            </li>
+          </ul>
+        </div>
+        <div class="header__bg">
+          <!-- TODO: Разобраться со свечением  -->
+          <img
+            src="/images/header__cup.png"
+            alt="starbucks"
+            class="header__bg-image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="advantages">
+        <div class="advantages__container">
+          <div class="advantages__content">
+            <div class="advantages__availability">
+              <img
+                src="/images/advantages-icon.png"
+                alt="availability icon"
+                width="202"
+                height="202"
+              />
+            </div>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img
+                  src="/images/advantages-1.png"
+                  alt="Tasty image"
+                  class="advantages__icon"
+                />
+                <h3 class="advantages__title">Tasty</h3>
+                <p class="advantages__subtitle">
+                  We have the most delicious coffee
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img
+                  src="/images/advantages-2.png"
+                  alt="Fast image"
+                  class="advantages__icon"
+                />
+                <h3 class="advantages__title">Fast</h3>
+                <p class="advantages__subtitle">
+                  Our cafe will serve you quickly
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img
+                  src="/images/advantages-3.png"
+                  alt="Available image"
+                  class="advantages__icon"
+                />
+                <h3 class="advantages__title">Available</h3>
+                <p class="advantages__subtitle">
+                  Cafe will serveat the most pleasant prices
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container about__container">
+          <div class="about-left">
+            <img
+              class="about-left__shadow"
+              src="/images/about-us-shadow.png"
+              alt="about us image"
+            />
+            <img
+              class="about-left__image"
+              src="/images/about-us.png"
+              alt="about us image"
+            />
+            <img
+              class="about-left__icon"
+              src="/images/advantages-icon.png"
+              alt="availability icon"
+            />
+          </div>
+          <div class="about-rigth">
+            <h2 class="base__title">
+              We make <span class="text-grad">delicious</span>
+            </h2>
+            <p class="base__subtitle">
+              Only in 2021 we have made more than 100,000 orders for you, your
+              loved ones, all of you, and in 2022 we are ready to destroy the
+              market
+            </p>
+            <div class="about-rigth__video">
+              <a href="#" class="button button-primary play">Cooking Process</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: Сделать слайдер  -->
+      <!-- TODO: Сделать адаптив блока Shop  -->
+      <!-- TODO: Замена картинок где зеленый круг на фоне  -->
+      <!-- TODO: Должна быть возможность поменять активный цвет и чтобы все менялось на сайте  -->
+
+      <section class="shop">
+        <div class="container shop__top">
+          <h2 class="base__title">
+            New Our <span class="text-grad">Products</span>
+          </h2>
+          <p class="base__subtitle shop__subtitle">
+            Have time to buy the most harmonious drinks in the new Starbucks
+            coffee and don't forget about the discount! Starbucks coffee and
+            don't&nbsp;forget about the discount!
+          </p>
+        </div>
+        <div class="shop__content container">
+          <article class="shop-item">
+            <div class="shop-item__top">
+              <img
+                src="/images/shop-1.png"
+                alt="Fast coffee"
+                class="shop-item__image"
+              />
+            </div>
+            <h3 class="shop-item__title">Fast</h3>
+            <p class="shop-item__description">
+              Our cafe will serve you quickly
+            </p>
+            <div class="shop-item__option">
+              <span class="shop-item__price">7,45$</span>
+              <span class="shop-item__size">330 ml</span>
+            </div>
+            <button class="button button-primary shop-item__button">
+              Buy Product
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
