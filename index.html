@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="#" class="header__logo">StarBucks</a>
+        <a href="#" class="header__logo">Арома</a>
         <button class="menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -23,47 +23,37 @@
         </button>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Select</a>
+              <a href="#" class="menu__link">преимущества</a>
             </li>
-            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">каталог</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">доставка</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
 
       <div class="container header__box">
         <div class="header__content">
-          <h1 class="base__title glow">
-            New Cafe by&nbsp;<span class="text-grad">StarBucks</span>
+          <h1 class="base__title">
+            Кофе со&nbsp;вкусом
+            <span class="text-grad">сбывшейся&nbsp;мечты</span>
           </h1>
           <p class="base__subtitle">
-            Have time to buy the most harmonious drinks in the
-            new&nbsp;Starbucks coffee and don't forget about the discount!
+            У нас кофе - не просто напиток, а искусство. Приглашаем вас на
+            уникальное кулинарное путешествие
           </p>
-          <div class="header__buttons">
-            <button class="button button-primary">Select a coffee</button>
-            <button class="button button-secondary">More</button>
-          </div>
-          <ul class="header__stats stats">
-            <li class="stats__item">
-              <span class="stats__count">9k</span>
-              <span class="stats__text">Premium users</span>
-            </li>
-            <li class="stats__item">
-              <span class="stats__count">2k</span>
-              <span class="stats__text">Happy customer</span>
-            </li>
-            <li class="stats__item">
-              <span class="stats__count">28</span>
-              <span class="stats__text">Awards winning</span>
-            </li>
-          </ul>
+          <button class="button button-primary">Выбрать кофе</button>
         </div>
         <div class="header__bg">
-          <!-- TODO: Разобраться со свечением  -->
           <img
-            src="/images/header__cup.png"
+            src="/images/starbucks.png"
             alt="starbucks"
             class="header__bg-image"
           />
@@ -72,49 +62,39 @@
     </header>
 
     <main>
-      <section class="advantages">
-        <div class="advantages__container">
-          <div class="advantages__content">
-            <div class="advantages__availability">
-              <img
-                src="/images/advantages-icon.png"
-                alt="availability icon"
-                width="202"
-                height="202"
-              />
-            </div>
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <img
-                  src="/images/advantages-1.png"
-                  alt="Tasty image"
-                  class="advantages__icon"
-                />
-                <h3 class="advantages__title">Tasty</h3>
-                <p class="advantages__subtitle">
-                  We have the most delicious coffee
+      <section class="about">
+        <div class="container about__container">
+          <div class="about-left">
+            <img
+              class="about-left__image"
+              src="/images/about-us.png"
+              alt="about us image"
+            />
+          </div>
+          <div class="about-rigth">
+            <h2 class="base__title">
+              Погрузись в <span class="text-grad">мечту</span>
+            </h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <h3 class="about__title">Яркий вкус</h3>
+                <p class="base__subtitle">
+                  Незабываемый вкус, который поможет вам ощутить самые
+                  невероятные эмоции
                 </p>
               </li>
-              <li class="advantages__item">
-                <img
-                  src="/images/advantages-2.png"
-                  alt="Fast image"
-                  class="advantages__icon"
-                />
-                <h3 class="advantages__title">Fast</h3>
-                <p class="advantages__subtitle">
-                  Our cafe will serve you quickly
+              <li class="about__item">
+                <h3 class="about__title">Натуральные продукты</h3>
+                <p class="base__subtitle">
+                  Радость, счастье, любовь, восторг - все это мы используем при
+                  приготовлении нашего зерна
                 </p>
               </li>
-              <li class="advantages__item">
-                <img
-                  src="/images/advantages-3.png"
-                  alt="Available image"
-                  class="advantages__icon"
-                />
-                <h3 class="advantages__title">Available</h3>
-                <p class="advantages__subtitle">
-                  Cafe will serveat the most pleasant prices
+              <li class="about__item">
+                <h3 class="about__title">Быстрое приготовление</h3>
+                <p class="base__subtitle">
+                  Для приготоволения напитка, исполняющего мечты, вам
+                  потребуется всего лишь вода и 5 минут вашего времени
                 </p>
               </li>
             </ul>
@@ -122,56 +102,12 @@
         </div>
       </section>
 
-      <section class="about">
-        <div class="container about__container">
-          <div class="about-left">
-            <img
-              class="about-left__shadow"
-              src="/images/about-us-shadow.png"
-              alt="about us image"
-            />
-            <img
-              class="about-left__image"
-              src="/images/about-us.png"
-              alt="about us image"
-            />
-            <img
-              class="about-left__icon"
-              src="/images/advantages-icon.png"
-              alt="availability icon"
-            />
-          </div>
-          <div class="about-rigth">
-            <h2 class="base__title">
-              We make <span class="text-grad">delicious</span>
-            </h2>
-            <p class="base__subtitle">
-              Only in 2021 we have made more than 100,000 orders for you, your
-              loved ones, all of you, and in 2022 we are ready to destroy the
-              market
-            </p>
-            <div class="about-rigth__video">
-              <a href="#" class="button button-primary play">Cooking Process</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TODO: Сделать слайдер  -->
-      <!-- TODO: Замена картинок где зеленый круг на фоне  -->
-      <!-- TODO: Должна быть возможность поменять активный цвет и чтобы все менялось на сайте  -->
-
       <section class="shop">
         <div class="container">
           <div class="shop__top">
             <h2 class="base__title">
-              New Our <span class="text-grad">Products</span>
+              Выбери свой <span class="text-grad">вкус</span>
             </h2>
-            <p class="base__subtitle shop__subtitle">
-              Have time to buy the most harmonious drinks in the new Starbucks
-              coffee and don't forget about the discount! Starbucks coffee and
-              don't&nbsp;forget about the discount!
-            </p>
           </div>
         </div>
         <div class="container">
@@ -184,82 +120,85 @@
                   class="shop-item__image"
                 />
               </div>
-              <h3 class="shop-item__title">Fast</h3>
-              <p class="shop-item__description">
-                Our cafe will serve you quickly
+              <h3 class="shop-item__title">Американо</h3>
+              <p class="base__subtitle">
+                Вкус для любителей мечтать об обыденном, допустим, о печеньке на
+                завтрак
               </p>
               <div class="shop-item__option">
-                <span class="shop-item__price">7,45$</span>
-                <span class="shop-item__size">330 ml</span>
+                <span class="shop-item__price">390 руб</span>
+                <span class="shop-item__size">250 мл</span>
               </div>
               <button class="button button-primary shop-item__button">
-                Buy Product
+                заказать
               </button>
             </li>
 
             <li class="shop-item">
               <div class="shop-item__top">
                 <img
-                  src="/images/shop-2.png"
+                  src="/images/shop-1.png"
                   alt="Fast coffee"
                   class="shop-item__image"
                 />
               </div>
-              <h3 class="shop-item__title">Fast</h3>
-              <p class="shop-item__description">
-                Our cafe will serve you quickly
+              <h3 class="shop-item__title">Американо</h3>
+              <p class="base__subtitle">
+                Вкус для любителей мечтать об обыденном, допустим, о печеньке на
+                завтрак
               </p>
               <div class="shop-item__option">
-                <span class="shop-item__price">7,45$</span>
-                <span class="shop-item__size">330 ml</span>
+                <span class="shop-item__price">390 руб</span>
+                <span class="shop-item__size">250 мл</span>
               </div>
               <button class="button button-primary shop-item__button">
-                Buy Product
+                заказать
               </button>
             </li>
 
             <li class="shop-item">
               <div class="shop-item__top">
                 <img
-                  src="/images/shop-4.png"
+                  src="/images/shop-1.png"
                   alt="Fast coffee"
                   class="shop-item__image"
                 />
               </div>
-              <h3 class="shop-item__title">Cappuccino</h3>
-              <p class="shop-item__description">
-                Our cafe will serve you quickly
+              <h3 class="shop-item__title">Раф</h3>
+              <p class="base__subtitle">
+                Вкус для более приземленных мечтателей, поможет ощутить,
+                допустим, плаванье в океане
               </p>
               <div class="shop-item__option">
-                <span class="shop-item__price">7,45$</span>
-                <span class="shop-item__size">330 ml</span>
+                <span class="shop-item__price">690 руб</span>
+                <span class="shop-item__size">300 мл</span>
               </div>
               <button class="button button-primary shop-item__button">
-                Buy Product
+                заказать
               </button>
             </li>
 
-            <li class="shop-item active">
+            <li class="shop-item">
               <div class="shop-item__top">
                 <img
-                  src="/images/shop-4.png"
+                  src="/images/shop-1.png"
                   alt="Fast coffee"
                   class="shop-item__image"
                 />
               </div>
-              <h3 class="shop-item__title">Cappuccino</h3>
-              <p class="shop-item__description">
-                Our cafe will serve you quickly
+              <h3 class="shop-item__title">Капучино</h3>
+              <p class="base__subtitle">
+                Вкус глобальной, практически невозможной мечты, такой как
+                бесконечная жизнь
               </p>
               <div class="shop-item__option">
-                <span class="shop-item__price">7,45$</span>
-                <span class="shop-item__size">330 ml</span>
+                <span class="shop-item__price">990 руб</span>
+                <span class="shop-item__size">330 мл</span>
               </div>
               <button class="button button-primary shop-item__button">
-                Buy Product
+                заказать
               </button>
             </li>
-            <button class="button slide__button"></button>
           </ul>
         </div>
       </section>
@@ -268,13 +207,8 @@
         <div class="container">
           <div class="events__top">
             <h2 class="base__title">
-              Our New <span class="text-grad">Events</span>
+              Вложение в <span class="text-grad">эмоции</span>
             </h2>
-            <p class="base__subtitle events__subtitle">
-              Only in 2021 we have made more than 100,000 orders for you, your
-              loved ones, all of you, and in 2022 we are ready to destroy the
-              market
-            </p>
           </div>
           <div class="events__list">
             <article class="events__item">
@@ -283,8 +217,11 @@
                 alt="event image"
                 class="events__image"
               />
-              <h3 class="events__title">Two coffee for 1 price</h3>
-              <a href="#" class="button button-primary events__button">More</a>
+              <h3 class="events__title">Авторские напитки</h3>
+              <p class="base__subtitle">
+                у нас можно попробовать эксклюзивные рецепты, которые вы не
+                найдете в других местах
+              </p>
             </article>
             <article class="events__item">
               <img
@@ -292,35 +229,41 @@
                 alt="event image"
                 class="events__image"
               />
-              <h3 class="events__title">KITCHEN TOUR</h3>
-              <a href="#" class="button button-primary events__button">More</a>
+              <h3 class="events__title">Скидка первым покупателям</h3>
+              <p class="base__subtitle">-20% на все позиции в меню</p>
             </article>
             <article class="events__item">
               <img
-                src="/images/event-2.png"
+                src="/images/event-3.png"
                 alt="event image"
                 class="events__image"
               />
-              <h3 class="events__title">FREE COFFEE FOR 3 COFFEE</h3>
-              <a href="#" class="button button-primary events__button">More</a>
+              <h3 class="events__title">Уютная атмосфера</h3>
+              <p class="base__subtitle">
+                Каждый сможет расслабиться и насладиться моментом
+              </p>
             </article>
             <article class="events__item">
               <img
-                src="/images/event-2.png"
+                src="/images/event-4.png"
                 alt="event image"
                 class="events__image"
               />
-              <h3 class="events__title">OUR INSTAGRAM</h3>
-              <a href="#" class="button button-primary events__button">More</a>
+              <h3 class="events__title">Доставка</h3>
+              <p class="base__subtitle">
+                Доставим в любую точку мира в течение 3-14 дней
+              </p>
             </article>
             <article class="events__item">
               <img
-                src="/images/event-2.png"
+                src="/images/event-5.png"
                 alt="event image"
                 class="events__image"
               />
-              <h3 class="events__title">WHERE ARE YOU CHOOSE US?</h3>
-              <a href="#" class="button button-primary events__button">More</a>
+              <h3 class="events__title">Оплата</h3>
+              <p class="base__subtitle">
+                Вы можете воспользоваться картой VISA, MasterCard, МИР
+              </p>
             </article>
           </div>
         </div>
@@ -330,26 +273,18 @@
         <div class="container contacts__container">
           <div class="contacts__content">
             <h2 class="base__title">
-              Our <span class="text-grad">Contacts</span>
+              Мы <span class="text-grad">находимся</span>
             </h2>
-            <p class="base__subtitle contacts__subtitle">
-              Have time to buy the most harmonious drinks in the new Starbucks
-              coffee and don't forget about the discount!
+            <p class="base__subtitle">
+              Приглашаем вас на уникальное кулинарное путешествие по адресу
             </p>
-            <a href="#" class="contacts__link" data-icon="inst">@supercoffee</a>
-            <a href="tel:+79999999999" class="contacts__link" data-icon="phone"
+            <a href="#" class="contacts__link">г.Казань, ул.Баумана, д.67</a>
+            <a href="tel:+79999999999" class="contacts__link"
               >+7-999-999-99-99</a
             >
           </div>
           <div class="contacts__right">
-            <div class="contacts__right__image">
-              <img src="/images/contacts.png" alt="about us image" />
-            </div>
-            <img
-              class="contacts__right__icon"
-              src="/images/advantages-icon.png"
-              alt="availability icon"
-            />
+            <img src="/images/contacts.png" alt="about us image" />
           </div>
         </div>
       </section>
@@ -358,69 +293,49 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <a href="#" class="footer__logo">StarBucks</a>
+          <a href="#" class="footer__logo">Арома</a>
           <nav class="footer-menu">
             <ul class="footer-menu__list">
               <li class="footer-menu__item">
-                <p class="footer-menu__title">Main</p>
+                <p class="footer-menu__title">Навигация</p>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Buy</a>
+                <a href="#" class="footer-menu__link">преимущества</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">More</a>
-              </li>
-            </ul>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <p class="footer-menu__title">We make</p>
+                <a href="#" class="footer-menu__link">каталог</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Process</a>
+                <a href="#" class="footer-menu__link">доставка</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">контакты</a>
               </li>
             </ul>
             <ul class="footer-menu__list">
               <li class="footer-menu__item">
-                <p class="footer-menu__title">Products</p>
+                <p class="footer-menu__title">Ссылки</p>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Cappuccino</a>
+                <a href="#" class="footer-menu__link"
+                  >политика конфиденциальности</a
+                >
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Fast</a>
-              </li>
-            </ul>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <p class="footer-menu__title">Events</p>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Drinks</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Eat</a>
-              </li>
-            </ul>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <p class="footer-menu__title">Contacts</p>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Inst</a>
-              </li>
-              <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">Number</a>
+                <a href="#" class="footer-menu__link">политика компании</a>
               </li>
             </ul>
           </nav>
-          <button class="button footer__button-top"></button>
         </div>
         <div class="footer-bottom">
-          <a href="tel:+79999999999" class="footer__phone">+7-999-999-99-99</a>
+          <p class="footer__phone">© 2026 Арома, Inc. Все права защищены</p>
 
           <a href="#" class="footer__social" data-icon="inst"></a>
         </div>
       </div>
     </footer>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="/scripts/script.js"></script>
 </html>
