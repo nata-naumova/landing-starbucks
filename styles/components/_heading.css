@@ -1,0 +1,21 @@
+.base__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xs);
+  margin-bottom: 40px;
+}
+
+.base__title {
+  font-weight: 800;
+  font-size: var(--text-2xl);
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.base__subtitle {
+  font-size: var(--text-base);
+  line-height: 163%;
+  letter-spacing: -0.02em;
+}

@@ -1,0 +1,39 @@
+.button {
+  font-family: var(--ff-base);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 146%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--milk);
+  background-color: var(--bg-clr);
+  border-radius: var(--radius-btn);
+
+  width: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+
+.button > svg {
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover > svg {
+  transform: rotate(-180deg);
+}
+
+.button-secondary {
+  border: 2px solid var(--milk);
+  background-color: var(--border-light-clr);
+}
+
+.button-icon {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}

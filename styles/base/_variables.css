@@ -1,0 +1,57 @@
+:root {
+  /* COLORS  */
+
+  --bg-clr-dark: #0b0c0d;
+  --text-clr: #d9d9d9;
+
+  --matcha: #abbf9b;
+  --milk: #e6e2d7;
+  --cream: #e4cdb0;
+  --caramel: #a2663c;
+  --coffee: #3f1d0e;
+
+  --bg-clr: var(--coffee);
+  --border-clr: rgba(63, 29, 14, 0.2);
+  --border-light-clr: rgba(230, 226, 215, 0.2);
+
+  --accent-light: #a2663c;
+  --accent: #3f1d0e;
+
+  /* FONTS  */
+  --ff-base: "Montserrat", sans-serif;
+
+  /* GRADIENTS  */
+  --base-grad: linear-gradient(
+    223deg,
+    var(--accent) 0%,
+    var(--accent-light) 100%
+  );
+  --glow-grad: linear-gradient(
+    245deg,
+    rgba(35, 114, 73, 0.55) 0%,
+    rgba(53, 198, 107, 0.73) 51.85%
+  );
+  --outline-grad: linear-gradient(145deg, #d9d9d9, #121517);
+
+  --gap-lg: 60px;
+  --gap-base: 30px;
+  --gap-xs: 20px;
+
+  --text-2xl: 80px;
+  --text-xl: 60px;
+  --text-lg: 30px;
+  --text-base: 16px;
+  --text-xs: 16px;
+
+  --radius-box: 30px;
+  --radius-btn: 10px;
+
+  --header-h: 70px;
+
+  /* Брейкпоинты (ширина в px) */
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 992px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 576px;
+  --breakpoint-xs: 375px;
+}

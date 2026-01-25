@@ -1,0 +1,50 @@
+.testimonials {
+  overflow: hidden;
+}
+.testimonials__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xs);
+}
+
+.testimonials__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+  margin-top: 30px;
+}
+
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--gap-base);
+}
+
+.testimonials__content {
+  overflow: hidden;
+}
+
+.testimonials__image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.testimonials__image > img {
+  height: 100%;
+}
+
+@media (max-width: 764px) {
+  .testimonials__container {
+    grid-template-columns: 1fr;
+    gap: var(--gap-xs);
+  }
+  .testimonials__image {
+    height: 150px;
+  }
+
+  .card {
+    flex: 0 0 100%;
+}
+}

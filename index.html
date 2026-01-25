@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starbucks</title>
+    <title>Арома - лучший кофе у нас</title>
+    <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +17,12 @@
     <header class="header">
       <div class="container header__container">
         <a href="#" class="header__logo">Арома</a>
-        <button class="menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-        </button>
-        <nav class="menu">
+
+        <nav id="menu" class="menu">
           <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#hero" class="menu__link">главная</a>
+            </li>
             <li class="menu__item">
               <a href="#about" class="menu__link">преимущества</a>
             </li>
@@ -37,285 +37,321 @@
             </li>
           </ul>
         </nav>
-      </div>
 
-      <div class="container header__box">
-        <div class="header__content">
-          <h1 class="base__title">
-            Кофе со&nbsp;вкусом
-            <span class="text-grad">сбывшейся мечты</span>
-          </h1>
-          <p class="base__subtitle">
-            У нас кофе - не просто напиток, а искусство. Приглашаем вас на
-            уникальное кулинарное путешествие
-          </p>
-          <button class="button button-primary">Выбрать кофе</button>
-        </div>
-        <div class="header__bg">
-          <img
-            src="/images/starbucks.png"
-            alt="starbucks"
-            class="header__bg-image"
-          />
+        <div id="menuOverlay" class="menu-overlay"></div>
+
+        <div class="header__buttons">
+          <button type="button" id="cart" class="header__button">
+            <i data-lucide="shopping-basket"></i>
+          </button>
+          <button type="button" id="burger" class="header__button menu-button">
+            <i data-lucide="menu"></i>
+            <i data-lucide="x"></i>
+          </button>
         </div>
       </div>
     </header>
 
-    <main>
-      <section id="about" class="about">
-        <div class="container about__container">
-          <div class="about-left">
-            <img src="/images/about-us.png" alt="about us image" />
+    <main class="main">
+      <section id="hero" class="hero section-accent">
+        <div class="container hero__container">
+          <div class="hero__bg">
+            <img src="/images/starbucks.png" alt="starbucks" />
           </div>
-          <div class="about-rigth">
-            <h2 class="base__title">
-              Погрузись в <span class="text-grad">мечту</span>
-            </h2>
-            <ul class="about__list">
-              <li class="about__item">
-                <h3 class="about__title">Яркий вкус</h3>
-                <p class="base__subtitle">
-                  Незабываемый вкус, который поможет вам ощутить самые
-                  невероятные эмоции
-                </p>
-              </li>
-              <li class="about__item">
-                <h3 class="about__title">Натуральные продукты</h3>
-                <p class="base__subtitle">
-                  Радость, счастье, любовь, восторг - все это мы используем при
-                  приготовлении нашего зерна
-                </p>
-              </li>
-              <li class="about__item">
-                <h3 class="about__title">Быстрое приготовление</h3>
-                <p class="base__subtitle">
-                  Для приготоволения напитка, исполняющего мечты, вам
-                  потребуется всего лишь вода и 5 минут вашего времени
-                </p>
-              </li>
-            </ul>
+          <h1 class="hero__title">магазин кофе</h1>
+          <div class="hero__content">
+            <div class="hero__box">
+              <i data-lucide="coffee"></i>
+              <p class="base__subtitle">
+                Кофе со вкусом сбывшейся мечты
+                <span>это не просто напиток, а искусство.</span>
+              </p>
+            </div>
+            <div class="hero__box hero__box-right">
+              <p class="base__subtitle">
+                Приглашаем вас на уникальное кулинарное путешествие
+              </p>
+              <a href="#shop" class="hero__button button"
+                >Меню <i data-lucide="move-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-sale">
+            <span class="hero-sale__top">Скидка первым покупателям</span>
+            <h3 class="hero-sale__title">-20% на все</h3>
+            <a href="#" class="link hero-sale__link"
+              >подробнее <i data-lucide="move-up-right"></i>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="shop" class="shop">
+      <section id="about" class="section about">
+        <div class="container">
+          <ul class="about__list">
+            <li class="about__item">
+              <h3 class="about__title">Яркий вкус</h3>
+              <p class="base__subtitle">
+                Незабываемый вкус, который поможет вам ощутить самые невероятные
+                эмоции
+              </p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__title">Натуральные продукты</h3>
+              <p class="base__subtitle">
+                Радость, счастье, любовь, восторг - все это мы используем при
+                приготовлении нашего зерна
+              </p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__title">Быстрое приготовление</h3>
+              <p class="base__subtitle">
+                Для приготоволения напитка, исполняющего мечты, вам потребуется
+                всего лишь вода и 5 минут вашего времени
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="events" class="section section-accent events">
+        <div class="container events__container">
+          <div class="events__left">
+            <h2 class="section__title">Вложение в&nbsp;эмоции</h2>
+            <div class="events__images">
+              <div class="events__image">
+                <img src="/images/event-1.png" alt="event image" />
+              </div>
+              <div class="events__image">
+                <img src="/images/event-2.png" alt="event image" />
+              </div>
+            </div>
+          </div>
+          <ul class="events__content">
+            <p class="events__text">
+              <b
+                >У нас можно попробовать авторские напитки по эксклюзивным
+                рецептам, которых вы не найдете в других местах.</b
+              >
+              В уютной и тёплой атмосфере каждый сможет расслабиться,
+              насладиться моментом и провести время с друзьями или в
+              одиночестве, погружаясь в гармонию вкуса и уюта.
+            </p>
+            <a href="#" class="button events__button"
+              >О нас <i data-lucide="move-right"></i>
+            </a>
+            <p class="events__text-xs">
+              Наши бариста и мастера создают каждую чашку с любовью и вниманием
+              к деталям, чтобы каждый визит оставлял приятные впечатления и
+              желание возвращаться снова.
+            </p>
+          </ul>
+        </div>
+      </section>
+
+      <section id="shop" class="section shop">
         <div class="container">
           <div class="shop__top">
-            <h2 class="base__title">
-              Выбери свой <span class="text-grad">вкус</span>
-            </h2>
+            <h2 class="section__title">Выбери свой вкус</h2>
+            <a href="#" class="button button-secondary"
+              >посмотреть еще <i data-lucide="move-right"></i
+            ></a>
           </div>
 
-          <div class="shop__content">
-            <div class="card">
-              <div class="card__image">
+          <ul class="shop-list">
+            <li class="shop-item">
+              <div class="shop-item__image">
                 <img src="/images/shop-1.png" alt="Fast coffee" />
               </div>
-              <div class="card__content">
-                <div class="card__options">
-                  <h3 class="card__title">Американо</h3>
-                  <span class="card__size">250 мл</span>
-                </div>
-                <p class="card__subtitle truncate">
-                  Вкус для любителей мечтать об обыденном, допустим, о печеньке
-                  на завтрак
-                </p>
-                <div class="card__options">
-                  <span class="card__price">390 руб</span>
-                  <button class="button button-primary card__button">
-                    заказать
-                  </button>
-                </div>
+              <h3 class="shop-item__title">Американо</h3>
+              <p class="base__subtitle truncate">
+                Вкус для любителей мечтать об обыденном, допустим, о печеньке на
+                завтрак
+              </p>
+              <div class="shop-item__options">
+                <span class="shop-item__price">390 руб</span>
+                <button class="button button-icon">
+                  <i data-lucide="plus"></i>
+                </button>
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card__image">
+            </li>
+            <li class="shop-item">
+              <div class="shop-item__image">
                 <img src="/images/shop-2.png" alt="Fast coffee" />
               </div>
-              <div class="card__content">
-                <div class="card__options">
-                  <h3 class="card__title">Капучино</h3>
-                  <span class="card__size">250 мл</span>
-                </div>
-                <p class="card__subtitle truncate">
-                  Вкус для более приземленных мечтателей, поможет ощутить,
-                  допустим, плаванье в океане
-                </p>
-                <div class="card__options">
-                  <span class="card__price">390 руб</span>
-                  <button class="button button-primary card__button">
-                    заказать
-                  </button>
-                </div>
+              <h3 class="shop-item__title">Капучино</h3>
+              <p class="base__subtitle truncate">
+                Вкус для любителей мечтать об обыденном, допустим, о печеньке на
+                завтрак
+              </p>
+              <div class="shop-item__options">
+                <span class="shop-item__price">390 руб</span>
+                <button class="button button-icon">
+                  <i data-lucide="plus"></i>
+                </button>
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card__image">
+            </li>
+            <li class="shop-item">
+              <div class="shop-item__image">
                 <img src="/images/shop-3.png" alt="Fast coffee" />
               </div>
-              <div class="card__content">
-                <div class="card__options">
-                  <h3 class="card__title">Раф</h3>
-                  <span class="card__size">250 мл</span>
-                </div>
-                <p class="card__subtitle truncate">
-                  Вкус глобальной, практически невозможной мечты, такой как
-                  бесконечная жизнь
-                </p>
-                <div class="card__options">
-                  <span class="card__price">390 руб</span>
-                  <button class="button button-primary card__button">
-                    заказать
-                  </button>
-                </div>
+              <h3 class="shop-item__title">Раф</h3>
+              <p class="base__subtitle truncate">
+                Вкус для любителей мечтать об обыденном, допустим, о печеньке на
+                завтрак
+              </p>
+              <div class="shop-item__options">
+                <span class="shop-item__price">390 руб</span>
+                <button class="button button-icon">
+                  <i data-lucide="plus"></i>
+                </button>
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card__image">
-                <img src="/images/shop-4.png" alt="Fast coffee" />
-              </div>
-              <div class="card__content">
-                <div class="card__options">
-                  <h3 class="card__title">Раф</h3>
-                  <span class="card__size">250 мл</span>
-                </div>
-                <p class="card__subtitle truncate">
-                  Вкус глобальной, практически невозможной мечты, такой как
-                  бесконечная жизнь
-                </p>
-                <div class="card__options">
-                  <span class="card__price">390 руб</span>
-                  <button class="button button-primary card__button">
-                    заказать
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card__image">
-                <img src="/images/shop-5.png" alt="Fast coffee" />
-              </div>
-              <div class="card__content">
-                <div class="card__options">
-                  <h3 class="card__title">Американо</h3>
-                  <span class="card__size">250 мл</span>
-                </div>
-                <p class="card__subtitle truncate">
-                  Вкус для любителей мечтать об обыденном, допустим, о печеньке
-                  на завтрак
-                </p>
-                <div class="card__options">
-                  <span class="card__price">390 руб</span>
-                  <button class="button button-primary card__button">
-                    заказать
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop__buttons">
-            <button id="next" class="button button-secondary">назад</button>
-            <button id="prev" class="button button-secondary">вперед</button>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section id="events" class="events">
-        <div class="container">
-          <div class="events__top">
-            <h2 class="base__title">
-              Вложение в <span class="text-grad">эмоции</span>
-            </h2>
+      <section id="testimonials" class="section section-accent testimonials">
+        <div class="container testimonials__container">
+          <div class="testimonials__image">
+            <img src="./images/event-5.png" alt="" />
           </div>
-          <div class="events__list">
-            <article class="events__item">
-              <img
-                src="/images/event-1.png"
-                alt="event image"
-                class="events__image"
-              />
-              <h3 class="events__title">Авторские напитки</h3>
-              <p class="base__subtitle">
-                у нас можно попробовать эксклюзивные рецепты, которые вы не
-                найдете в других местах
-              </p>
-            </article>
-            <article class="events__item">
-              <img
-                src="/images/event-2.png"
-                alt="event image"
-                class="events__image"
-              />
-              <h3 class="events__title">Скидка первым покупателям</h3>
-              <p class="base__subtitle">-20% на все позиции в меню</p>
-            </article>
-            <article class="events__item">
-              <img
-                src="/images/event-3.png"
-                alt="event image"
-                class="events__image"
-              />
-              <h3 class="events__title">Уютная атмосфера</h3>
-              <p class="base__subtitle">
-                Каждый сможет расслабиться и насладиться моментом
-              </p>
-            </article>
-            <article class="events__item">
-              <img
-                src="/images/event-4.png"
-                alt="event image"
-                class="events__image"
-              />
-              <h3 class="events__title">Доставка</h3>
-              <p class="base__subtitle">
-                Доставим в любую точку мира в течение 3-14 дней
-              </p>
-            </article>
-            <article class="events__item">
-              <img
-                src="/images/event-5.png"
-                alt="event image"
-                class="events__image"
-              />
-              <h3 class="events__title">Оплата</h3>
-              <p class="base__subtitle">
-                Вы можете воспользоваться картой VISA, MasterCard, МИР
-              </p>
-            </article>
+          <div class="testimonials__content">
+            <h2 class="section__title">Что о нас думают</h2>
+            <ul class="cards">
+              <li class="card">
+                <p class="card__subtitle">
+                  Этот кофе стал моим любимым утренним ритуалом! Брала с собой
+                  латте с овсяным молоком — идеальный баланс крепости и
+                  нежности. Спасибо бариста за отличное настроение с самого
+                  утра!
+                </p>
+                <div class="card__author">
+                  <div class="card__image">
+                    <img
+                      src="https://i.pinimg.com/736x/a7/f6/d8/a7f6d8fdbb4244980944910b17c97741.jpg"
+                      alt="фото Анна"
+                    />
+                  </div>
+                  <div class="card__title">Анна</div>
+                </div>
+              </li>
+              <li class="card">
+                <p class="card__subtitle">
+                  Как ценитель эспрессо, могу сказать — здесь он безупречный.
+                  Густая кремовая пенка, глубокий вкус без горечи. Наконец-то
+                  нашел место, где готовят по-настоящему. Рекомендую всем!
+                </p>
+                <div class="card__author">
+                  <div class="card__image">
+                    <img
+                      src="https://i.pinimg.com/1200x/fb/fc/f3/fbfcf3f1d02cdf465466e33c83e6b9a4.jpg"
+                      alt="фото Максим"
+                    />
+                  </div>
+                  <div class="card__title">Максим</div>
+                </div>
+              </li>
+              <li class="card">
+                <p class="card__subtitle">
+                  Заказывала фильтр-кофе по рекомендации бариста. Это было
+                  настоящее открытие! Я почувствовала настоящие нотки ягод и
+                  шоколада, о которых говорили. Огромное спасибо за новый опыт и
+                  подробную консультацию.
+                </p>
+                <div class="card__author">
+                  <div class="card__image">
+                    <img
+                      src="https://i.pinimg.com/736x/b2/30/bf/b230bf78c612186cc9be80e8bd78e621.jpg"
+                      alt="фото Ольга"
+                    />
+                  </div>
+                  <div class="card__title">Ольга</div>
+                </div>
+              </li>
+              <li class="card">
+                <p class="card__subtitle">
+                  Регулярно беру кофе с собой перед работой. Цена и качество на
+                  месте! Кофе всегда горячий и ароматный, а круассаны — просто
+                  объедение. Удобно, быстро и вкусно. Моя кофейня у метро!
+                </p>
+                <div class="card__author">
+                  <div class="card__image">
+                    <img
+                      src="https://i.pinimg.com/1200x/f1/18/1f/f1181f90164292ff54655212e595809a.jpg"
+                      alt="фото Дмитрий"
+                    />
+                  </div>
+                  <div class="card__title">Дмитрий</div>
+                </div>
+              </li>
+            </ul>
+            <div class="testimonials__buttons">
+              <button id="prev" class="button">
+                пред
+                <i data-lucide="move-left"></i>
+              </button>
+              <button id="next" class="button">
+                след
+                <i data-lucide="move-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="contacts" class="contacts">
         <div class="container contacts__container">
-          <div class="contacts__content">
-            <h2 class="base__title">
-              Мы <span class="text-grad">находимся</span>
-            </h2>
-            <p class="base__subtitle">
-              Приглашаем вас на уникальное кулинарное путешествие по адресу
-            </p>
-            <a href="#" class="contacts__link">г.Казань, ул.Баумана, д.67</a>
-            <a href="tel:+79999999999" class="contacts__link"
-              >+7-999-999-99-99</a
-            >
-          </div>
-          <div class="contacts__right">
+          <div class="contacts__image">
             <img src="/images/contacts.png" alt="about us image" />
+          </div>
+          <div class="contacts__content">
+            <h2 class="section__title contacts__title">Приходите к нам</h2>
+
+            <div class="contacts__links">
+              <p class="base__subtitle">
+                Приглашаем вас на уникальное кулинарное путешествие по адресу
+              </p>
+              <p class="button button-secondary">
+                <i data-lucide="map-pin"></i> г.Казань, ул.Баумана, д.67
+              </p>
+            </div>
+            <div class="contacts__links">
+              <p class="base__subtitle">По поводу сотрудничества звоните</p>
+              <a href="tel:+79999999999" class="button button-secondary"
+                ><i data-lucide="phone"></i> +7-999-999-99-99</a
+              >
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
+    <footer class="footer section section-accent">
+      <div class="footer-top">
+        <div class="container footer-flex">
           <a href="#" class="footer__logo">Арома</a>
+          <div class="footer__socials">
+            <a href="#" class="button button-icon"
+              ><i data-lucide="instagram"></i
+            ></a>
+            <a href="#" class="button button-icon"
+              ><i data-lucide="instagram"></i
+            ></a>
+            <a href="#" class="button button-icon"
+              ><i data-lucide="instagram"></i
+            ></a>
+          </div>
+          <p class="footer__text base__subtitle">
+            У нас кофе - не просто напиток, а искусство.
+          </p>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div class="container footer__menu-overlay">
+          <button class="button button-icon footer__menu-btn">
+            <i data-lucide="list-chevrons-down-up"></i>
+          </button>
           <nav class="footer-menu">
             <ul class="footer-menu__list">
               <li class="footer-menu__item">
@@ -336,30 +372,55 @@
             </ul>
             <ul class="footer-menu__list">
               <li class="footer-menu__item">
-                <p class="footer-menu__title">Ссылки</p>
+                <p class="footer-menu__title">О нас</p>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link"
-                  >политика конфиденциальности</a
-                >
+                <a href="#" class="footer-menu__link">преимущества</a>
               </li>
               <li class="footer-menu__item">
-                <a href="#" class="footer-menu__link">политика компании</a>
+                <a href="#" class="footer-menu__link">каталог</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">доставка</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">контакты</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="footer-bottom">
-          <p class="footer__copy">© 2026 Арома, Inc. Все права защищены</p>
-        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p class="footer__copy">
+          &copy; <span id="current-year">2026</span> Арома, Inc. Все права
+          защищены
+        </p>
+        <ul class="footer-nav">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link"
+              >политика конфиденциальности</a
+            >
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">политика компании</a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
 
   <script src="/scripts/gsap.min.js"></script>
-  <script src="/scripts/ScrollToPlugin.min.js"></script>
-  <script src="/scripts/ScrollTrigger.min.js"></script>
-  <!-- <script src="/scripts/Flip.min.js"></script> -->
+  <script src="/scripts/plugins/ScrollToPlugin.min.js"></script>
+  <script src="/scripts/plugins/ScrollTrigger.min.js"></script>
+
+  <!-- Dev version -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- Prod version -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script src="/scripts/constants.js"></script>
+  <script src="/scripts/smoothScroll.js"></script>
   <script src="/scripts/slider.js"></script>
+  <script src="/scripts/cart.js"></script>
   <script src="/scripts/script.js"></script>
 </html>
