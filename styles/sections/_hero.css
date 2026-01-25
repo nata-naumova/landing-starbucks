@@ -34,7 +34,7 @@
 }
 
 .hero__title {
-  font-size: clamp(3rem, 1rem + 6vw, 10rem);
+  font-size: clamp(2.3rem, 1rem + 5vw, 10rem);
   font-weight: 400;
   text-transform: uppercase;
   width: 100%;

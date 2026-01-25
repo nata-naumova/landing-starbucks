@@ -39,3 +39,22 @@
 .contacts__image > img {
   height: 100%;
 }
+
+@media screen and (max-width: 764px) {
+  .contacts__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__image {
+    height: 150px;
+    margin-bottom: 0;
+  }
+  .contacts__content {
+    padding-top: 0;
+    border-left: none;
+  }
+  .contacts__title,
+  .contacts__links {
+    padding-left: 0;
+  }
+}
