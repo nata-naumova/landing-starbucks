@@ -89,7 +89,9 @@ landing-starbucks/
 # Слайдер
 - слайдер отзывов на gsap
 
-![Демо desktop](/images/демо-фулл.gif)
-![Демо mobile](/images/демо-мини.gif)
+<div>
+    <img src="/images/демо-фулл.gif" width="250" /><br>
+    <img src="/images/демо-мини.gif" width="250" />
+</div>
 
 ```
