@@ -13,6 +13,9 @@
 @import url("./components/_modal.css");
 @import url("./components/_footer.css");
 
+@import url("./components/_bread-crumbs.css");
+@import url("./components/_pagination.css");
+
 /* Секции страницы  */
 @import url("./sections/_hero.css");
 @import url("./sections/_about.css");
@@ -20,3 +23,5 @@
 @import url("./sections/_shop.css");
 @import url("./sections/_testimonials.css");
 @import url("./sections/_contacts.css");
+
+@import url("./sections/_catalog.css");
