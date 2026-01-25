@@ -1,6 +1,6 @@
 # aroma-landing page
 
-[![Live Demo](https://img.shields.io/badge/✨_Live_Demo=for-the-badge)](https://landing-starbucks-liart.vercel.app/)
+<img src="images/демо-мини.gif" width="250" />
 
 Арома - это магазин который предоставляет широкий ассортимент бодрящего кофе. Данный проект является главной страницей сайта, который в будущем можно расширить до интернет магазина.
 
@@ -88,10 +88,4 @@ landing-starbucks/
 
 # Слайдер
 - слайдер отзывов на gsap
-
-<div>
-    <img src="/images/демо-фулл.gif" width="250" /><br>
-    <img src="/images/демо-мини.gif" width="250" />
-</div>
-
 ```
